@@ -1,0 +1,76 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+#layout {
+    display: flex;
+    height: 75vh;
+}
+#filtre {
+    width: 250px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+}
+#map {
+    flex: 1;
+}
+#stats {
+    padding: 20px;
+    background: #f4f4f4;
+}
+.charts-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.chart {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 0;
+}
+.chart canvas {
+    max-height: 300px;
+}
+h2, h3 {
+    color: #38b6ff;
+}
+button {
+    background-color: #38b6ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    background-color: #2a9ae0;
+}
+select, input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+.humid-square {
+    width: 30px;
+    height: 30px;
+    background-color: blue; /* Choisis la couleur que tu veux */
+    opacity: 1;  /* L'opacité sera contrôlée via JavaScript */
+    border-radius: 5px; /* Si tu veux des coins arrondis (optionnel) */
+}
+
